@@ -59,7 +59,7 @@ function deriveGameBoard(gameTurns) {
 function App() {
   const [players, setPlayers] = useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
-  // const [hasWinner, setHasWinner] = useState(false); //we dont need to create a state but rather to derive the information from the gameTurns state
+  // const [hasWinner, setHasWinner] = useState(false); //we dont need to create a state but rather to derive the information from the gameTurns state!
   // const [activePlayer, setActivePlayer] = useState("X");
   const activePlayer = deriveActivePlayer(gameTurns);
   const gameBoard = deriveGameBoard(gameTurns);
